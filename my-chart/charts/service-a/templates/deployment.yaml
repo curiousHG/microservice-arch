@@ -16,5 +16,6 @@ spec:
       containers:
         - name: service-a
           image: docker.io/library/service-a:1.0.0
+          imagePullPolicy: Never
           ports:
             - containerPort: 8080

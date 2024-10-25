@@ -1,0 +1,13 @@
+# my-chart/charts/service-b/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-b
+  namespace: app
+spec:
+  selector:
+    app: service-b
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080  # assuming service-b listens on 8081
